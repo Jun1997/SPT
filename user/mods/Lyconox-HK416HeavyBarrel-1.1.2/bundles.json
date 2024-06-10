@@ -1,0 +1,8 @@
+{
+	"manifest": [
+	 {
+		"key":"HK416_Mod_0/barrel_416_hk_406mm_556x45.bundle", 
+		"dependencyKeys":["shaders"]
+	 }
+	]
+  }

@@ -1,0 +1,44 @@
+{
+    "info": {
+        "id": "6646ff6400008c0a9a546658",
+        "scavId": "6646ff6400059ef963ad2f00",
+        "aid": 1381223,
+        "username": "InsaneJun",
+        "password": "",
+        "wipe": true,
+        "edition": "Standard"
+    },
+    "characters": {
+        "pmc": {},
+        "scav": {}
+    },
+    "vitality": {
+        "health": {
+            "Hydration": 0,
+            "Energy": 0,
+            "Temperature": 0,
+            "Head": 0,
+            "Chest": 0,
+            "Stomach": 0,
+            "LeftArm": 0,
+            "RightArm": 0,
+            "LeftLeg": 0,
+            "RightLeg": 0
+        },
+        "effects": {
+            "Head": {},
+            "Chest": {},
+            "Stomach": {},
+            "LeftArm": {},
+            "RightArm": {},
+            "LeftLeg": {},
+            "RightLeg": {}
+        }
+    },
+    "inraid": {
+        "location": "none",
+        "character": "none"
+    },
+    "insurance": [],
+    "dialogues": {}
+}

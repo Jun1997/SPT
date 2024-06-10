@@ -1,0 +1,27 @@
+{
+    "lyconoxbl16h": {
+        "ItemID": "lyconoxbl16h",
+        "Name": "lyconoxbl16h",
+        "ModType": "",
+        "VerticalRecoil": 0,
+        "HorizontalRecoil": -6,
+        "AutoROF": -1.5,
+        "SemiROF": -0.5,
+        "ModMalfunctionChance": -5,
+        "CameraRecoil": -6,
+        "Convergence": 0,
+        "Accuracy": 0,
+        "CenterOfImpact": 0.015,
+        "HeatFactor": 0.94,
+        "CoolFactor": 0.94,
+        "DurabilityBurnModificator": 0.98,
+        "Velocity": 0,
+        "ConflictingItems": [],
+        "Ergonomics": 0,
+        "Weight": 1.10,
+        "ShotgunDispersion": 1,
+        "Loudness": 0,
+        "LoyaltyLevel": 0,
+        "Price": 0
+    }
+}

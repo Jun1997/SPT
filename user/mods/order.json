@@ -1,0 +1,26 @@
+{
+  "order": [
+    "fika-server",
+    "SPT-Realism",
+    "SWAG",
+    "DanW-SPTQuestingBots",
+    "odt-iteminfo-4.0.3",
+    "zSolarint-SAIN-ServerMod",
+    "AAAArtemTrader",
+    "AAArtemEquipment",
+    "acidphantasm-brightlasers",
+    "aMoxoPixel-Painter",
+    "ChooChoo-TraderModding",
+    "EpicRangeTime-Weapons",
+    "Fontaine-FOV-Fix",
+    "hooshu-sptspeedload-1.0.0",
+    "MoxoPixel-BlackCore",
+    "MoxoPixel-MagTape",
+    "MoxoPixel-TacticalGearComponent",
+    "Platinum-TwoSlotExtendedMags-1.0.3",
+    "RaiRaiTheRaichu-AllTheClothes-1.5.0",
+    "RaiRaiTheRaichu-UnrestrictedPlates-1.0.1",
+    "Virtual's Custom Quest Loader",
+    "WTT-PackNStrap"
+  ]
+}

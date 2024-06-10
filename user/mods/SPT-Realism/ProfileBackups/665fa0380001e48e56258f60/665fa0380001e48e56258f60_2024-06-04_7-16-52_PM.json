@@ -1,0 +1,44 @@
+{
+    "info": {
+        "id": "665fa0380001e48e56258f60",
+        "scavId": "665fa0380001bcac2cf63e40",
+        "aid": 1511114,
+        "username": "LabsJun",
+        "password": "",
+        "wipe": true,
+        "edition": "SPT Zero to hero"
+    },
+    "characters": {
+        "pmc": {},
+        "scav": {}
+    },
+    "vitality": {
+        "health": {
+            "Hydration": 0,
+            "Energy": 0,
+            "Temperature": 0,
+            "Head": 0,
+            "Chest": 0,
+            "Stomach": 0,
+            "LeftArm": 0,
+            "RightArm": 0,
+            "LeftLeg": 0,
+            "RightLeg": 0
+        },
+        "effects": {
+            "Head": {},
+            "Chest": {},
+            "Stomach": {},
+            "LeftArm": {},
+            "RightArm": {},
+            "LeftLeg": {},
+            "RightLeg": {}
+        }
+    },
+    "inraid": {
+        "location": "none",
+        "character": "none"
+    },
+    "insurance": [],
+    "dialogues": {}
+}

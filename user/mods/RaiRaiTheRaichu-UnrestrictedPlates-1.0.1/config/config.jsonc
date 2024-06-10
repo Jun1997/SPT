@@ -1,0 +1,131 @@
+{
+	"ConfigToggles": {
+		// Setting this to false disables all other options in this config.
+		"AllowRemovingSoftArmor": true,
+
+		/*
+		/ *****NOTICE***** (pls read)
+		/
+		/ If EITHER of these next two options are set to "true" (which they are by default)...
+		/ Bot equipment generation is going to be modified.
+		/ This could clash with other mods - I can't promise compatibility.
+		/ Make this mod load AFTER other mods using a Load Order Editor tool (check the SPT Hub).
+		/
+		/ What happens with this mod is, AI will always spawn with the default plate preset for each vest.
+		/ Vanilla SPT randomizes the plates in each slot, and when the soft armor slots are unlocked...
+		/ It can randomize what's in the soft armor slots (put hard plates in there) which can be lame and unfair.
+		/ It also would cause Scavs to not generate ANYTHING in the soft armor slots (empty body armor/rigs).
+		/ That kind of defeats the purpose of body armor at all!
+		/ So while it's only a minor change to bot generation, it does undo the randomness of what plates are in AI armor.
+		/ (Sorry Chomp, I know you worked hard on that.)
+		/
+		/ If you really want to keep those random plate systems, set these next two to false.
+		/ Then the only thing this mod will do is allow any HARD armor plate to fit in any HARD armor plate slot.
+		/ Maybe that's what you want anyway?
+		/
+		/ And if the ABOVE option is enabled but the next two are disabled... 
+		/ You can still rip out the soft armor inserts out of raid/in your stash.
+		/ You'll get a red icon background though, as it's "missing a required component" but it's just purely visual.
+		/ The randomness of plates spawning in vests will still be enabled and bot generation will be unaffected.
+		/ 
+		/ Also, hi, thanks for reading and downloading, love you <3
+		*/
+
+		// If true, you can place armor plates in slots that usually only hold the built-in soft armor.
+		"AllowPlatesInSoftArmorSlots": true,
+		// If true, you can remove plates and inserts in-raid. Setting this to false means you can only manipulate those slots in your stash.
+		"AllowRemovingSoftArmorInRaid": true
+	},
+	"LocaleStrings": {
+		// [VAR1] is replaced with "heavy" or "light".
+		// [VAR2] is replaced with the material type ("aluminum", "aramid", etc.)
+		// [VAR3] is replaced with the slot ("chest", "right side", "groin", etc.)
+		"ch": "一个由[VAR2]制成的[VAR1]装甲插入物，适用于一个[VAR3]插槽。",
+		"en": "A [VAR1] armor insert made of [VAR2] which fits in a [VAR3] slot.",
+		"hu": "Egy [VAR2] anyagból készült [VAR1] páncélbetét, ami beleillik egy [VAR3] helyre.",
+		"po": "Um inserto de armadura [VAR1] feito de [VAR2] que se encaixa em um espaço [VAR3].",
+		"ro": "Un [VAR1] insert de armură făcut din [VAR2] care se potrivește într-un spațiu [VAR3].",
+		"tu": "[VAR1] yapımı [VAR2] zırh ekleme, bir [VAR3] yuvasına uyan.",
+		"sk": "Vložka zbrani [VAR1], vyrobená z [VAR2], ktorá sa hodí do [VAR3] zásuvky.",
+		"es-mx": "Un inserto de armadura [VAR1] hecho de [VAR2] que se ajusta en una ranura [VAR3].",
+		"cz": "Vložka pancíře [VAR1] vyrobena z [VAR2], která se vejde do [VAR3] slotu.",
+		"ge": "Ein [VAR1] Rüstungseinsatz aus [VAR2], der in einen [VAR3]-Slot passt.",
+		"it": "Un inserto per armatura [VAR1] fatto di [VAR2] che si adatta in uno slot [VAR3].",
+		"fr": "Un insert d'armure [VAR1] fait de [VAR2] qui s'adapte dans une fente [VAR3].",
+		"es": "Un inserto de armadura [VAR1] hecho de [VAR2] que encaja en una ranura [VAR3].",
+		"jp": "[VAR1]のアーマーインサート、素材は[VAR2]で、[VAR3]のスロットに収まります。",
+		"pl": "Wkładka pancerza [VAR1] wykonana z [VAR2], która pasuje do gniazda [VAR3].",
+		"kr": "[VAR1]로 만든 [VAR2] 갑옷 삽입물이 [VAR3] 슬롯에 맞습니다.",
+		"ru": "Вставка брони [VAR1], изготовленная из [VAR2], которая подходит для слота [VAR3]."
+	},
+	/*
+	/ The settings below allow you to balance the stats for soft armor inserts.
+	/ By default in Vanilla SPT, armor inserts technically have no weight and a size of 1x1.
+	/ The mod will also deduct these weights from the base weight of the armor vest they go on.
+	/ Therefore, the vests will not weigh any differently with all the base armor inserts in.
+	/ Be careful, setting this too high will mean unequipping those inserts will drop the weight of the armor into the negatives.
+	/ These settings seem to be fairly balanced, but you're free to adjust them as you see fit.
+	*/
+	"SoftArmorSettings": {
+		"Chest": {
+			"BaseWeight": 0.3,
+			"Multipliers": { // Armors are classified as "heavy", "light", or "none" (thanks BSG).
+				"Heavy": 3, // With a base weight of 0.5, a "Heavy" (like Armor Steel) chest soft armor will weigh 2 kg with this setting.
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 2, // These settings will cause the chest armor to take up 2x2 slots in the inventory.
+			"GridWidth": 2
+		},
+		"Back": {
+			"BaseWeight": 0.3,
+			"Multipliers": {
+				"Heavy": 3,
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 2,
+			"GridWidth": 2
+		},
+		"Side": {	// These are applied to both the Left and Right side inserts.
+			"BaseWeight": 0.15,
+			"Multipliers": {
+				"Heavy": 2,
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 1,
+			"GridWidth": 1
+		},
+		"Neck": {
+			"BaseWeight": 0.15,
+			"Multipliers": {
+				"Heavy": 2,
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 1,
+			"GridWidth": 1
+		},
+		"Groin": {	// The settings for "Groin" also affect the Rear Pelvis armor inserts (they're the same shape so.)
+			"BaseWeight": 0.15,
+			"Multipliers": {
+				"Heavy": 2.5,
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 1,
+			"GridWidth": 1
+		},
+		"Arm": {	// These are applied to both the Left and Right arm inserts.
+			"BaseWeight": 0.15,
+			"Multipliers": {
+				"Heavy": 2.5,
+				"Light": 1,
+				"None": 1
+			},
+			"GridHeight": 1,
+			"GridWidth": 1
+		}
+	}
+}

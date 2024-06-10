@@ -1,0 +1,10 @@
+{
+  "Name": "2. Less Difficult Copy()",
+  "Description": "[Modified] Bots react more slowly, and are less accurate than usual.",
+  "Creator": "user",
+  "SAINVersion": "2.2.0",
+  "DateCreated": "05/18/2024 00:00:00",
+  "IsCustom": true,
+  "PresetCopiedFrom": "2. Less Difficult",
+  "CanEditName": true
+}

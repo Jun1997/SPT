@@ -17,7 +17,7 @@ BepInEx/*
 !BepInEx/plugins
 
 # BepInEx config
-BepInEx/config
+!BepInEx/config
 
 # BepInEx config ignore list
 # BepInEx/config/BepInEx.cfg
